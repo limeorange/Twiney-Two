@@ -33,9 +33,7 @@ const ProductListPage = () => {
   );
 
   const filteredByIsLarvate = data?.filter((item) => item.saleState !== "숨김");
-  // 추가기능) 개수 설정에 따라 n개씩 보여주기 기능 구현할 경우 사용
-  // const limit, setLimit] = useState(12);
-
+  // 한 페이지 당 상품 노출 개수
   const limit = 12;
   const [page, setPage] = useState(1);
   const offset = (page - 1) * limit;

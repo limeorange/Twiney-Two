@@ -2,6 +2,8 @@ import { useContext, useEffect, useState } from "react";
 import CartItem from "../../../components/user/order/cart-item";
 import { cartCtx, storage } from "../../../components/store/cart-context";
 import { useNavigate } from "react-router-dom";
+
+/** 장바구니 페이지 */
 const CartPage = (props) => {
   const { cartData, setCartData } = useContext(cartCtx);
   const [totalPrice, setTotalPrice] = useState(0);
